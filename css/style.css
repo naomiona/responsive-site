@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #193441;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #f4a090;
+  text-decoration: none; }
+  a:visited {
+    color: #ef7862; }
+  a:hover {
+    color: #ef7862; }
+  a:active {
+    color: #f6b4a7; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills .container h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #skills .container h3 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+header .box {
+  background-image: url("../images/img_rose1.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 768px) {
+    header .box {
+      height: 250px; } }
+header .site-title {
+  font-size: 1.8rem;
+  line-height: normal; }
+
+p {
+  font-size: 1.6rem; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills {
+  background-color: #d1dbbd; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    @media (min-width: 769px) {
+      #skills .container {
+        -webkit-flex-direction: row;
+        flex-direction: row; } }
+    #skills .container h2 {
+      color: #fdfcf6;
+      margin-bottom: 60px; }
+    #skills .container .skill-box {
+      -webkit-flex: 1;
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fdfcf6;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    #skills .container h3 {
+      color: #f4a090;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+      font-weight: bold; }
+
+footer {
+  padding: 20px; }
+  footer h2 {
+    font-size: 2.2rem; }
+  footer a {
+    width: 194px;
+    background-color: #d1dbbd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    color: #193441; }
+
+/*# sourceMappingURL=style.css.map */
